@@ -6,7 +6,14 @@ This model is submitting to The British Journal of Radiology.
 
 # Train
 ## Sample code
-```python train.py --model DenseNet --criterion CrossEntropyLoss --optimizer Adam --epochs 50 --batch_size 64 --resize_size 256 --augmentation yes --load_image yes --gpu_ids 0,1,2```
+### Tabular
+```python train.py --model MLP --criterion CrossEntropyLoss --optimizer Adam --epochs 50 --batch_size 64 --augmentation yes```
+
+### Image
+```python train.py --model DenseNet --criterion CrossEntropyLoss --optimizer Adam --epochs 50 --batch_size 64 --augmentation yes```
+
+### Image and tabular
+```python train.py --model DenseNet+MLP --criterion CrossEntropyLoss --optimizer Adam --epochs 50 --batch_size 64 --augmentation yes```
 
 # Test
 ## Sample code
