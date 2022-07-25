@@ -13,3 +13,7 @@ This model is submitting to The British Journal of Radiology.
 ```python test.py```
 
 Note that this code is implemented to use afeter running codes of train.py
+
+# Enviroment
+CUDA version 11.3 or 11.4
+PyTorch version 1.10
